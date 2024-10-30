@@ -1,0 +1,25 @@
+
+
+<h1>Partidos cadastrados</h1>
+
+
+<div>
+    <div class=table-reponsive>
+        <table class="table table-striped">
+            <thead>
+                    <th>Partido ID</th>
+                    <th>Descricao</th>
+                    <th>Sigla</th>
+             </thead>
+            <tbody>
+                <% for(let i = 0; i<partido.length; i++) { %>
+                <tr>
+                    <td><%= partido[i].par_id %></td>
+                    <td><%= partido[i].par_descricao %></td>
+                    <td><%= partido[i].par_sigla %></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div> 
+</div>

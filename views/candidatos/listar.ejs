@@ -1,0 +1,38 @@
+<script src="/js/candidato/excluir.js"></script>
+<h1>Candidatos cadastrados</h1>
+
+<div>
+    <div class=table-reponsive>
+        <table class="table table-striped">
+            <thead>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Número</th>
+                    <th>Idade</th>
+                    <th>Partido</th>
+                    <th>Votos</th>
+                    <th>Acoes</th>
+            </thead>
+            <tbody>
+                <% for(let i = 0; i<candidatos.length; i++) { %>
+                <tr>
+                    <td><%= candidatos[i].can_id %></td>
+                    <td><%= candidatos[i].can_nome %></td>
+                    <td><%= candidatos[i].can_numero %></td>
+                    <td><%= candidatos[i].can_idade %></td>
+                    <td><%= candidatos[i].par_descricao %> (<%= candidatos[i].par_sigla %>)</td>
+                    <td><%= candidatos[i].can_votos %></td>
+                    <td>
+                    <button
+            data-id="<%= candidatos[i].can_id %>"
+            class="btn btn-danger btnExclusao"
+          >
+            <i class="fas fa-trash"></i>
+          </button>
+        </td>
+                <% } %>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

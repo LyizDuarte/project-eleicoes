@@ -1,0 +1,244 @@
+<html></html>
+
+<head>
+  <title>PFS1 - Eleições 2025</title>
+  <style>
+    body,html {
+    width: 100%;
+    height: 100%;
+    font-family: verdana;
+    }
+
+    h4,h5,h1 {
+    margin-left: 5px;
+    }
+
+    h3 {
+    margin-left: 5px;
+    margin-top: 30px;
+    }
+
+    div {
+    border-style: solid;
+    border-width: 0px;
+    }
+
+    .modal-principal {
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: calc(50% - 225px);
+    left: calc(50% - 400px);
+    border-width: 0px;
+    }
+
+    .monitor {
+    border: 4px groove LightSteelBlue;
+    background-color: LightSteelBlue;
+    position: absolute;
+    width: 478px;
+    height: 450px;
+    }
+
+    .apresentacao-candidato {
+    float: left;
+    width: 100%;
+    height: 300px;
+    }
+
+    .numero-titulo {
+    float: left;
+    margin-right: 6px; 
+    }
+
+    input{
+    margin-top: 15px;
+    padding: 0px;
+    color: black;
+    font-family: Tahoma;
+    font-size: 40px; 
+    width: 35px;
+    height: 50px;
+    text-align: center;
+    }
+
+    .candidato-foto {
+    float: right;
+    border-width: 0px;
+    width: 145px;
+    height: 170px;
+    margin-right: 3px;
+    margin-top: 3px;
+    }
+
+    .orientacao {
+    border-width: 4px;
+    border-top-style: inset;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: LightSteelBlue;
+    float: left;
+    width: 100%;
+    height: 148px;
+    }
+
+    .orientacao p {
+    margin-left: 10px;
+    }
+
+    .teclado {
+    background: url("https://www.publicdomainpictures.net/pictures/210000/velka/paper-texture-crean-background.jpg");
+    width: 318px;
+    height: 450px;
+    border: 4px groove LightSteelBlue;
+    position: relative;
+    float: right;
+    }
+
+    .justica {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+    }
+
+    .img-logo {
+    width: 65px;
+    vertical-align: middle;
+    }
+
+    .teclado-numeros {
+    background: url("https://image.freepik.com/fotos-gratis/textura-de-quadro-de-giz-preto-com-arranhoes-e-tracos-de-giz_89245-150.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin-top: 2px;
+    height: 250px;
+    width: 240px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 20px;
+    }
+
+    .botao {
+    background-color: #555555;
+    border-top-style: outset;
+    border-left-style: outset;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 3px;
+    cursor: pointer;
+    }
+
+    .button0 {
+    margin-left: 68px;
+    margin-right: 68px;
+
+    }
+
+    .btn-operacoes {
+    background: url("https://image.freepik.com/fotos-gratis/textura-de-quadro-de-giz-preto-com-arranhoes-e-tracos-de-giz_89245-150.jpg");
+    background-position: center left;
+    width: 320px;
+    height: 110px;
+    float: left;
+    padding-top: 0px;
+    }
+
+    .branco {
+    background-color: white;
+    font-size: 12px;
+    color: gray;
+    border-style: none;
+    padding: 15px;
+    margin-top: 40px;
+    margin-left: 12px;
+    }
+
+    .corrige {
+    background-color: #ff8c00;
+    font-size: 12px;
+    color: black;
+    border-style: none;
+    padding: 15px;
+    }
+
+    .confirma {
+    background-color: #4caf50;
+    font-size: 12px;
+    color: black;
+    border-style: none;
+
+    }
+
+    #posicao1, #posicao2 {
+        pointer-events: none;
+        background-color: white;
+    } 
+
+  </style>
+</head>
+
+<body>
+  <div class="modal-principal">
+<form name="voto">
+    <div class="monitor">
+      <div class="apresentacao-candidato">
+        <div class="candidato-foto">
+          <img id="img" src="/img/avatar2.jpg" style="display: none;" width="140px" alt="foto">
+        </div>
+        <h4>SEU VOTO PARA</h4>
+        <h1>PREFEITO</h1>
+        <h3 class="numero-titulo">Número:</h3>
+        
+        
+         <input disabled type="text" name="posicao1" maxlength="1" size="1" id="posicao1"> 
+         <input disabled type="text" name="posicao2" maxlength="1" size="1" id="posicao2"> 
+        
+        <h3 id="nome">Nome:</h3>
+        <h3 id="partido">Partido:</h3>
+      </div>
+      <div class="orientacao">
+        <h4>Aperte a Tecla</h4>
+        <h4>VERDE para CONFIRMAR</h4>
+        <h4>LARANJA para CORRIGIR</h4>
+
+      </div>
+    </div>
+    <div class="teclado">
+      <div class="justica">
+
+        <img class="img-logo" src="/img/brasao.png" alt="brasao">
+        Justiça Eleitoral
+
+      </div>
+      <div class=" teclado-numeros">
+        <div class="tabela-numeros">
+          <button type="button" class="botao" onclick="atribuirvalor(1)">1</button>
+          <button type="button" class="botao button2" onclick="atribuirvalor(2)">2</button>
+          <button type="button" class="botao button3" onclick="atribuirvalor(3)">3</button>
+          <button type="button" class="botao button4" onclick="atribuirvalor(4)">4</button>
+          <button type="button" class="botao button5" onclick="atribuirvalor(5)">5</button>
+          <button type="button" class="botao button6" onclick="atribuirvalor(6)">6</button>
+          <button type="button" class="botao button7" onclick="atribuirvalor(7)">7</button>
+          <button type="button" class="botao button8" onclick="atribuirvalor(8)">8</button>
+          <button type="button" class="botao button9" onclick="atribuirvalor(9)">9</button>
+          <button type="button" class="botao button0" onclick="atribuirvalor(0)">0</button>
+        </div>
+      </div>
+      <div class="btn-operacoes">
+        <button type="button" class="botao branco">BRANCO</button>
+        <button type="button" onclick="limpar()" class="botao corrige">CORRIGE</button>
+        <button type="button" id="botaoConfirma" class="botao confirma">CONFIRMA</button>
+      </div>
+    </div>
+</form>
+  </div>
+</body>
+<script src="/js/urna/votacao.js"></script>
+</html>

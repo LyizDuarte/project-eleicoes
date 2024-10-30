@@ -1,0 +1,35 @@
+<script src="/js/candidato/cadastrar.js"></script>
+<h1>Cadastro de candidatos</h1>
+<form>
+  <div style="color: red" id="msgErro"></div>
+  <div>
+    <label for="inputNome">Nome</label>
+    <input type="text" class="form-control" id="inputNome" name="nome" />
+  </div>
+  <div>
+    <label for="inputIdade">Idade</label>
+    <input type="text" class="form-control" id="inputIdade" name="idade" />
+  </div>
+  <div>
+    <label for="inputNumero">Numero</label>
+    <input type="text" class="form-control" id="inputNumero" name="numero" />
+  </div>
+  <div>
+    <label for="selPartido">Selecione um partido
+        <select class="form-control" id="selPartido" name="partido">
+            <option value="">Selecione</option>
+            <% for(let i=0;i<partidos.length;i++){ %>
+            <option value="<%= partidos[i].par_id %>">
+                <%= partidos[i].par_descricao %>
+            </option>
+            <% } %>
+        </select>
+      </label>
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary" id="btnFazerCadastro">
+      Cadastrar candidato
+    </button>
+    <a class="btn btn-primary" href="/">Voltar</a>
+  </div>
+</form>
