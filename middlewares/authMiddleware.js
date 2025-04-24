@@ -6,6 +6,7 @@ class AuthMiddleware {
       let usuario = new UsuarioModel();
       usuario = await usuario.obter(idUsuario);
       if (usuario) {
+        res.locals.usuarioLogado = usuario
         next();
       } else {
         res.redirect("/login");

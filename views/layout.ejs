@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Prova 1 Bim - PFS I</title>
+    <title>Sistema de Eleições</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -69,7 +69,7 @@
               <img src="/img/avatar.png" class="elevation-2" alt="Joãozinho" />
             </div>
             <div class="info">
-              <span class="text-bold">Joãozinho</span>
+              <span class="text-bold"><%= locals.usuarioLogado.usu_nome %></span>
               <div>
                 <span class="text-primary pr-2">Administrador</span>
               </div>
@@ -113,6 +113,12 @@
                 <a href="/votacao" class="nav-link">
                   <i class="nav-icon fas fa-check"></i>
                   <p>Votar</p>
+                </a>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="/login/logout" class="nav-link">
+                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                  <p>Deslogar</p>
                 </a>
               </li>
             </ul>
