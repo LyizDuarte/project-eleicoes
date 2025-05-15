@@ -31,4 +31,4 @@ Este projeto foi feito para o desenvolvimento de um sistema web de processo elei
 
 * **Backend:** Node.js e Express
 * **Frontend:** EJS (para renderização das páginas) e Bootstrap (para o layout)
-* **Banco de Dados:**
+* **Banco de Dados:** MySQL
