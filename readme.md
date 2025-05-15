@@ -1,6 +1,6 @@
 # 🗳️ Sistema Web para Eleição
 
-Este projeto visa finalizar o desenvolvimento de um sistema web para o processo eleitoral de prefeito da cidade de Anta Gorda, no Rio Grande do Sul. O sistema, iniciado com Node.js, Express e EJS, com layout Bootstrap, necessita da implementação de diversas funcionalidades para estar pronto para as eleições.
+Este projeto foi feito para o desenvolvimento de um sistema web de processo eleitoral para prefeito. O sistema foi feito com Node.js, Express e EJS, com layout Bootstrap.
 
 ## 🛠️ Funcionalidades a serem Implementadas
 
@@ -31,4 +31,4 @@ Este projeto visa finalizar o desenvolvimento de um sistema web para o processo 
 
 * **Backend:** Node.js e Express
 * **Frontend:** EJS (para renderização das páginas) e Bootstrap (para o layout)
-* **Banco de Dados:** (Detalhes no script a ser baixado)
+* **Banco de Dados:**
